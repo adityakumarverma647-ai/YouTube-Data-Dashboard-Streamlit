@@ -1,0 +1,7 @@
+| Package                    | Purpose                         |
+| -------------------------- | ------------------------------- |
+| `streamlit`                | Dashboard framework             |
+| `pandas`                   | Data processing and DataFrames  |
+| `plotly`                   | Interactive charts              |
+| `google-api-python-client` | YouTube Data API v3 integration |
+| `python-dotenv`            | Load API key from `.env`        |
