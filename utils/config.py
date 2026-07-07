@@ -17,19 +17,22 @@ from dotenv import load_dotenv
 # Load Environment Variables
 # ==========================================================
 
+import streamlit as st
+from dotenv import load_dotenv
+import os
+
 load_dotenv()
 
-# ==========================================================
-# API Configuration
-# ==========================================================
-
-YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "")
+# Try Streamlit Cloud Secrets first
+try:
+    YOUTUBE_API_KEY = st.secrets["YOUTUBE_API_KEY"]
+except Exception:
+    YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "")
 
 if not YOUTUBE_API_KEY:
     raise ValueError(
-        "YOUTUBE_API_KEY not found. Please check your .env file."
+        "YOUTUBE_API_KEY not found. Please check Streamlit Secrets or your .env file."
     )
-
 # ==========================================================
 # YouTube API Parts
 # ==========================================================
