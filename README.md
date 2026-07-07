@@ -1,63 +1,53 @@
 # 📺 YouTube Data Dashboard using Streamlit
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?logo=streamlit)
-![YouTube API](https://img.shields.io/badge/YouTube-Data%20API%20v3-red?logo=youtube)
-![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-blue?logo=plotly)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-black?logo=pandas)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red.svg)
+![Plotly](https://img.shields.io/badge/Plotly-Interactive-success.svg)
+![YouTube API](https://img.shields.io/badge/YouTube%20Data%20API-v3-red.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ---
 
 ## 📌 Project Overview
 
-The **YouTube Data Dashboard** is a professional analytics dashboard built with **Python** and **Streamlit** that allows users to search any public YouTube channel and explore its statistics through interactive visualizations.
+The **YouTube Data Dashboard** is a professional analytics dashboard developed using **Python** and **Streamlit**.
 
-Using the **YouTube Data API v3**, the dashboard retrieves channel information, recent videos, engagement metrics, and presents them with an intuitive and responsive interface.
+The application allows users to search any public YouTube channel and instantly visualize important channel statistics including subscribers, total views, total videos, engagement rate, latest uploads, interactive charts, and downloadable analytics reports.
 
-This project was developed as part of my internship to demonstrate API integration, data analysis, dashboard development, and visualization skills.
+This project was developed as the **Final Internship Project** at **Crixsoft Solutions**.
+
+---
+
+# 🚀 Live Demo
+
+### 🌐 Streamlit Deployment
+
+https://youtube-data-dashboard-app-7usmpbz3innbqkdzruesyt.streamlit.app/
 
 ---
 
 # ✨ Features
 
 - 🔍 Search any public YouTube channel
-- 📺 Display channel banner and thumbnail
-- 👥 View subscriber count
-- 👁 View total channel views
-- 🎥 Display total uploaded videos
-- 🌍 Show channel country
-- ❤️ Calculate engagement rate
-- 📊 Interactive Plotly charts
-- 🏆 Top performing videos
-- 📄 Latest uploaded videos dataset
-- 📥 Download analytics as CSV
-- 🧠 Channel Insights
-- ⚡ Streamlit caching
-- 🛡 Error handling
-- 📱 Responsive dashboard layout
+- 📊 Professional KPI Dashboard
+- 📈 Interactive Plotly Charts
+- 🎥 Latest Uploaded Videos
+- 🏆 Top Performing Videos
+- ❤️ Engagement Analytics
+- 📄 Download CSV Reports
+- ☁️ Cloud Deployment using Streamlit Community Cloud
+- 📱 Responsive Dark Theme UI
 
 ---
 
 # 🛠 Tech Stack
 
-### Frontend
-
-- Streamlit
-
-### Backend
-
 - Python
-
-### APIs
-
-- YouTube Data API v3
-
-### Libraries
-
+- Streamlit
 - Pandas
 - Plotly
-- google-api-python-client
+- Google API Client
+- YouTube Data API v3
 - python-dotenv
 
 ---
@@ -65,59 +55,88 @@ This project was developed as part of my internship to demonstrate API integrati
 # 📂 Project Structure
 
 ```text
-YouTube_Data_Dashboard/
+YouTube-Data-Dashboard-Streamlit/
 │
 ├── app.py
+├── config.py
+├── analytics.py
+├── helper.py
+├── youtube_api.py
 ├── requirements.txt
 ├── README.md
-├── .env.example
 ├── .gitignore
-│
-├── assets/
+├── .env.example
 │
 ├── screenshots/
+│   ├── 01-home.png
+│   ├── 02-channel-overview.png
+│   ├── 03-analytics-summary.png
+│   ├── 04-views-chart.png
+│   ├── 05-latest-videos-dataset.png
+│   ├── 06-latest-uploaded-videos.png
+│   └── 07-footer.png
 │
 └── utils/
-    ├── youtube_api.py
-    ├── analytics.py
-    ├── helper.py
-    └── config.py
 ```
 
 ---
 
-# 🚀 Installation
+# 📷 Screenshots
+
+## 🏠 Home Page
+
+![](screenshots/01-home.png)
+
+---
+
+## 📊 Channel Overview
+
+![](screenshots/02-channel-overview.png)
+
+---
+
+## 📈 Analytics Summary
+
+![](screenshots/03-analytics-summary.png)
+
+---
+
+## 📉 Interactive Charts
+
+![](screenshots/04-views-chart.png)
+
+---
+
+## 📄 Latest Videos Dataset
+
+![](screenshots/05-latest-videos-dataset.png)
+
+---
+
+## 🎥 Latest Uploaded Videos
+
+![](screenshots/06-latest-uploaded-videos.png)
+
+---
+
+## 🚀 Dashboard Footer
+
+![](screenshots/07-footer.png)
+
+---
+
+# ⚙ Installation
 
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YouTube-Data-Dashboard-Streamlit.git
+git clone https://github.com/adityakumarverma647-ai/YouTube-Data-Dashboard-Streamlit.git
 ```
 
-Go inside the project
+Move inside the project
 
 ```bash
 cd YouTube-Data-Dashboard-Streamlit
-```
-
-Create a virtual environment
-
-```bash
-python -m venv venv
-```
-
-Activate the environment
-
-### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-### macOS/Linux
-
-```bash
-source venv/bin/activate
 ```
 
 Install dependencies
@@ -126,143 +145,53 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
----
-
-# 🔑 API Setup
-
-1. Open Google Cloud Console.
-2. Create a project.
-3. Enable **YouTube Data API v3**.
-4. Generate an API Key.
-5. Create a `.env` file in the project root.
-
-Example:
+Create a `.env` file
 
 ```env
-YOUTUBE_API_KEY=YOUR_API_KEY_HERE
+YOUTUBE_API_KEY=YOUR_API_KEY
 ```
 
----
-
-# ▶ Running the Application
+Run the application
 
 ```bash
 streamlit run app.py
 ```
 
-The dashboard will open automatically in your browser.
+---
+
+# 🔑 API Setup
+
+1. Create a Google Cloud Project.
+2. Enable **YouTube Data API v3**.
+3. Generate an API Key.
+4. Store the API key in the `.env` file or Streamlit Secrets.
 
 ---
 
-# 📊 Dashboard Features
+# 📥 CSV Export
 
-## Channel Overview
-
-- Subscribers
-- Total Views
-- Total Videos
-- Country
+The dashboard allows users to export the latest analytics data in CSV format for further analysis.
 
 ---
 
-## Analytics Summary
+# 🌍 Deployment
 
-- Average Views
-- Average Likes
-- Average Comments
-- Engagement Rate
+This project is deployed using **Streamlit Community Cloud**.
 
----
+Live App:
 
-## Channel Insights
-
-- Best Performing Video
-- Most Liked Video
-- Most Commented Video
-- Highest Engagement Video
-- Performance Score
+https://youtube-data-dashboard-app-7usmpbz3innbqkdzruesyt.streamlit.app/
 
 ---
 
-## Interactive Charts
+# 🚀 Future Improvements
 
-- Views Analysis
-- Engagement Analysis
-
----
-
-## Video Analytics
-
-- Top Videos
-- Latest Uploaded Videos
-- Download CSV
-
----
-
-# 📸 Screenshots
-
-Add screenshots inside the **screenshots** folder.
-
-Example:
-
-```
-screenshots/
-│
-├── dashboard-home.png
-├── analytics-summary.png
-├── charts.png
-├── videos.png
-└── insights.png
-```
-
-Then update them here:
-
-```markdown
-![Dashboard](screenshots/dashboard-home.png)
-
-![Analytics](screenshots/analytics-summary.png)
-
-![Charts](screenshots/charts.png)
-
-![Videos](screenshots/videos.png)
-
-![Insights](screenshots/insights.png)
-```
-
----
-
-# 🌐 Deployment
-
-The project can be deployed on:
-
-- Streamlit Community Cloud
-
-Deployment steps:
-
-1. Push project to GitHub
-2. Login to Streamlit Community Cloud
-3. Connect GitHub repository
-4. Select **app.py**
-5. Add the environment variable
-
-```
-YOUTUBE_API_KEY
-```
-
-6. Deploy
-
----
-
-# 🔮 Future Improvements
-
-- Compare multiple YouTube channels
-- Historical analytics
-- AI-powered insights
-- Search history
-- PDF report generation
-- Advanced filtering
-- Sentiment analysis
-- Dark/Light theme toggle
+- Channel Comparison
+- Sentiment Analysis
+- Trending Video Detection
+- AI-based Performance Prediction
+- Historical Analytics
+- User Authentication
 
 ---
 
@@ -270,22 +199,25 @@ YOUTUBE_API_KEY
 
 **Aditya Kumar Verma**
 
-B.Tech CSE (AI)
+B.Tech (Computer Science & Engineering - Artificial Intelligence)
 
-Python Developer | Data Analytics Enthusiast
+GitHub:
+https://github.com/adityakumarverma647-ai
+
+LinkedIn:
+(Add your LinkedIn Profile URL)
 
 ---
 
 # 🙏 Acknowledgements
 
+- Crixsoft Solutions
 - Google Developers
-- YouTube Data API v3
 - Streamlit
 - Plotly
 - Pandas
+- YouTube Data API v3
 
 ---
 
-# ⭐ Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
+## ⭐ If you like this project, don't forget to give it a Star!
