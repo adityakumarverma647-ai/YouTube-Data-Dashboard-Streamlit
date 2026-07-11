@@ -205,7 +205,7 @@ GitHub:
 https://github.com/adityakumarverma647-ai
 
 LinkedIn:
-(Add your LinkedIn Profile URL)
+[(Add your LinkedIn Profile URL)](https://www.linkedin.com/posts/aditya-verma-ai_python-streamlit-dataanalytics-activity-7480342952297476097-UZO_?utm_source=share&utm_medium=member_android&rcm=ACoAAF06LX0BgEtDsj_YHEXBHROgdyxIf3eKQ1M)
 
 ---
 
